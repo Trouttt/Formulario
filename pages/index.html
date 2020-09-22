@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/css/global.css" />
+  </head>
+  <body>
+    <div id="box">
+      <img src="../public/imagens/perfil.png" />
+      <form>
+        <div>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="Type your e-mail"
+          />
+        </div>
+        <div>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Type your password"
+          />
+        </div>
+        <div>
+          <input type="submit" value="Login" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
+
+<style>
+  body,
+  body #box form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body {
+    width: 100vw;
+    height: 80vh;
+    font-family: "Treubuchet MS", Helvetica, sans-serif;
+    background: #643d87 url(../public/imagens/fundo.jpg) no-repeat top center;
+  }
+  body #box {
+    width: 90vw;
+    height: 40vh;
+    background-color: rgba(255, 255, 255, 0.3);
+    -webkit-border-radius: 2vh;
+    -moz-border-radius: 2vh;
+    border-radius: 2vh;
+    text-align: center;
+  }
+  body #box img {
+    width: 25vmax;
+    height: 16vh;
+    margin-top: -8vh;
+  }
+  body #box form {
+    flex-direction: column;
+    width: 100%;
+  }
+  body #box form div input {
+    width: 35vmax;
+    height: 5vh;
+    font-size: 1.3em;
+    margin-bottom: 2vh;
+    padding-left: 5vh;
+    border: none;
+  }
+
+  body #box form div input[type="text"] {
+    margin-top: 3vh;
+    background: url(../public/imagens/icone-usuario.png) center left;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: 1vh;
+  }
+  body #box form div input[type="password"] {
+    background: url(../public/imagens/icone-cadeado.png) center left;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: 1vh;
+  }
+  body #box form div input[type="submit"] {
+    padding-left: 0vh;
+    color: White;
+    background-color: #f79300;
+    border: 1px solid #db7d00;
+    background: -webkit-linear-gradient(to bottom, #faa600, #f68a00);
+    background: -moz-linear-gradient(to bottom, #faa600, #f68a00);
+    background: -o-linear-gradient(to bottom, #faa600, #f68a00);
+    background: linear-gradient(to bottom, #faa600, #f68a00);
+  }
+  @media (min-width: 700px) {
+    body #box {
+      width: 80vmin;
+    }
+    body #box img {
+      width: 25vmin;
+    }
+    body #box form div input {
+      width: 60vmin;
+    }
+  }
+</style>
